@@ -1,0 +1,4 @@
+forecaster,mae,rmse,mape,smape,r2
+LSTM (H-TRACE),27.147,39.2032,7.4336,6.6719,0.6583
+Persistence,31.9612,58.4512,15.4292,10.9393,0.728
+Volatility-Gated,26.2735,38.7277,7.4336,6.6719,0.7613

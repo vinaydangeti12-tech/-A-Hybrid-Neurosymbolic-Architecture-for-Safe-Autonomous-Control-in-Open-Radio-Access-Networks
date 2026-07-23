@@ -1,0 +1,4 @@
+detector,precision,recall,f1,roc_auc,pr_auc
+iforest,0.0771,0.4993,0.0616,0.8201,0.1072
+ocsvm,0.0816,0.5521,0.0709,0.7359,0.1122
+threshold,0.0877,0.1219,0.0222,0.5222,0.0817

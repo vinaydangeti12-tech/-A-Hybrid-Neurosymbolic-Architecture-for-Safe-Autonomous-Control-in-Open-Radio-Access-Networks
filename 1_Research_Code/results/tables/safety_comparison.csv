@@ -1,0 +1,6 @@
+system,short,gate,forecaster,false_pass_rate,false_block_rate,hallucination_rate,n_unsafe_presented,n_unsafe_passed,latency_mean_ms,latency_p95_ms,meets_near_rt,fp_upper95,fault_recall,n_episodes
+H-TRACE (full),H-TRACE,ON,LSTM,0.0,0.0,0.0,50,0,43.0287,56.115,100.0,0.06,40.0,474
+H-TRACE NoGate (ablation),H-TRACE-NoGate,OFF,LSTM,100.0,0.0,0.0,50,50,40.179,52.6871,100.0,,40.0,474
+Tsourdinis et al. (MobiCom'24),Tsourdinis,OFF,—,100.0,0.0,0.0,50,50,27.9067,31.6205,100.0,,40.0,474
+OCSVM baseline,OCSVM,OFF,—,100.0,0.0,0.0,50,50,1.5672,2.1298,100.0,,48.8889,474
+Threshold baseline,Threshold,OFF,—,100.0,0.0,0.0,50,50,0.1239,0.1895,100.0,,8.8889,474

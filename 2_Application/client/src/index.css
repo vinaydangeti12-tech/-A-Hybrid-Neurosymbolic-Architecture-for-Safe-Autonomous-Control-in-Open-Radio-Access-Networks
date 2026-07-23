@@ -1,0 +1,83 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.status-online {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #059669;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.15);
+  animation: pulse-online 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-online {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.15); }
+  50%       { box-shadow: 0 0 0 5px rgba(5, 150, 105, 0.22); }
+}
+
+.card-hover {
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+.card-hover:hover {
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.10) !important;
+  transform: translateY(-2px);
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+}
+
+/* ── Agent Architecture animations ── */
+
+@keyframes agent-pulse-ring {
+  0%, 100% { transform: scale(1); opacity: 0.45; }
+  50%       { transform: scale(1.18); opacity: 0; }
+}
+
+@keyframes flow-dot {
+  0%   { transform: translateY(0);    opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateY(30px); opacity: 0; }
+}
+
+@keyframes node-entrance {
+  from { opacity: 0; transform: translateY(7px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+@keyframes spin-once {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes spin-loop {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes dot-ping {
+  0%    { transform: scale(1); opacity: 0.8; }
+  70%   { transform: scale(1.8); opacity: 0; }
+  100%  { transform: scale(1.8); opacity: 0; }
+}
+
+.agent-node-enter  { animation: node-entrance 0.35s ease forwards; }
+.agent-icon-spin   { animation: spin-loop 1.2s linear infinite; }
+.agent-dot-ping    { animation: dot-ping 1.2s ease-out infinite; }
+

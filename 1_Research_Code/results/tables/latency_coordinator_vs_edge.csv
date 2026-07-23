@@ -1,0 +1,3 @@
+tier,in_real_time_loop,mean_ms,p95_ms,meets_100ms_near_rt,n
+Edge ML control loop (real-time),yes,43.03,56.12,yes,474 episodes
+"Regional Coordinator (Gemini, non-real-time)",no,1436.36,2933.4,n/a (off the control loop),12 calls

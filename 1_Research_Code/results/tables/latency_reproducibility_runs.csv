@@ -1,0 +1,4 @@
+run,description,edge_mean_ms,edge_p95_ms,episodes,within_100ms_budget_pct
+run_1,initial (report draft),28.75,34.30,474,100.0
+run_2,submitted results (this folder),43.03,56.12,474,100.0
+run_3,independent re-run,61.11,77.29,474,100.0

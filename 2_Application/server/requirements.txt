@@ -1,0 +1,17 @@
+flask>=3.0.0
+flask-cors>=4.0.0
+flask-socketio>=5.3.6
+python-socketio>=5.10.0
+python-dotenv>=1.0.0
+google-adk>=1.0.0
+# gemini_service.py uses the new unified SDK: `from google import genai`
+# (package name: google-genai), NOT the legacy `google-generativeai`.
+google-genai>=1.0
+numpy>=1.26.0
+
+# H-TRACE real ML core (Isolation Forest + LSTM) used by the edge agents and the
+# live scenario engine so the application runs the architecture, not a simulation.
+scikit-learn>=1.3
+# torch is a large download (hundreds of MB). For a CPU-only install use:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0

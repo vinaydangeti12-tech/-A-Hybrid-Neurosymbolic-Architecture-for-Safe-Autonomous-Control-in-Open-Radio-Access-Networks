@@ -1,0 +1,4 @@
+forecaster,mae,rmse,mape,smape,r2
+LSTM (H-TRACE),27.147,39.203,7.434,6.672,0.658
+Persistence,31.961,58.451,15.429,10.939,0.728
+SeasonalNaive,44.877,73.22,16.614,13.388,0.168

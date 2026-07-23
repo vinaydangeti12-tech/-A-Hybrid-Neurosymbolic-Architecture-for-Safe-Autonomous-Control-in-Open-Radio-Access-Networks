@@ -1,0 +1,3 @@
+standing_intent,self_healing_episodes,ml_detected_fault,ml_recall_%,ml_missed_fault,unsafe_optimisation_proposed,gate_ON_blocked,gate_OFF_executed_unsafe
+max_capacity,90,36,40.0,54,54,54,54
+save_energy,90,36,40.0,54,16,16,16

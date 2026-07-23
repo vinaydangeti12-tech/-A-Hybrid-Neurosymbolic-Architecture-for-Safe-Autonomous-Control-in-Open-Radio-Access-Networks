@@ -1,0 +1,16 @@
+system,scenario,executed,blocked,faults_detected,faults
+H-TRACE,night,192,0,0,0
+H-TRACE,festival,192,0,0,0
+H-TRACE,self_healing,90,0,36,90
+H-TRACE-NoGate,night,192,0,0,0
+H-TRACE-NoGate,festival,192,0,0,0
+H-TRACE-NoGate,self_healing,90,0,36,90
+Tsourdinis,night,192,0,0,0
+Tsourdinis,festival,192,0,0,0
+Tsourdinis,self_healing,90,0,36,90
+OCSVM,night,192,0,0,0
+OCSVM,festival,192,0,0,0
+OCSVM,self_healing,90,0,44,90
+Threshold,night,192,0,0,0
+Threshold,festival,192,0,0,0
+Threshold,self_healing,90,0,8,90
